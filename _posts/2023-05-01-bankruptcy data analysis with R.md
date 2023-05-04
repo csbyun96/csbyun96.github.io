@@ -1,3 +1,13 @@
+---
+layout: post
+title: Bankruptcy Data Analysis using Logistic Regression and Regularization with R
+subtitle: R Data Analysis
+gh-repo: daattali/beautiful-jekyll
+gh-badge: [star, fork, follow]
+tags: [R]
+comments: true
+---
+
 Bankruptcy Data Analysis
 ================
 Changsoo Byun
