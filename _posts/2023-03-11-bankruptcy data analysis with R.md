@@ -11,7 +11,6 @@ comments: true
 Bankruptcy Data Analysis
 ================
 Changsoo Byun
-April 19, 2023
 
 ### A Preliminary analysis
 
