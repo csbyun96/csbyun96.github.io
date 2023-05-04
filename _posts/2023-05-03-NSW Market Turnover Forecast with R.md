@@ -1,12 +1,13 @@
 ---
 layout: post
-title: Forecasting Turnover of Markets in New South Wales with R
-subtitle: R Data Analysis
-cover-img: /assets/img/path.jpg
-thumbnail-img: [/assets/img/thumb.png](https://avatars.githubusercontent.com/u/127844778?v=4)
-share-img: /assets/img/path.jpg
-tags: [R]
+title: Sample blog post
+subtitle: Each post also has a subtitle
+gh-repo: daattali/beautiful-jekyll
+gh-badge: [star, fork, follow]
+tags: [test]
+comments: true
 ---
+
 
 Forecasting Turnover of Markets in New South Wales
 ================
