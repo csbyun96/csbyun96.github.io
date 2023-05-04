@@ -127,7 +127,7 @@ p19b <- ggplot(data_clean, aes(x = isBankrupted, y = Predictor19, fill = factor(
 grid.arrange(p4b, p6b, p11b, p19b, nrow = 2, ncol = 2)
 ```
 
-![](bankruptcy-data-analysis_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
+![image](https://user-images.githubusercontent.com/127844778/236184125-bb322afb-d6a2-481c-b5db-038c3115b682.png)
 
 \#Predictor4 is left-skeweed, Predictor 6 and 19 are right skewed and
 Predictor11 is normally distributed.The IQR boxes show the same position
@@ -154,7 +154,7 @@ scatter <- ggplot(data_clean, aes(x =log_Predictor4, y = log_Predictor63, color 
 scatter
 ```
 
-![](bankruptcy-data-analysis_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
+![image](https://user-images.githubusercontent.com/127844778/236184284-7f6ae424-5c50-4385-9dce-df8cb43d81cc.png)
 
 ### B Logistic Regression
 
@@ -347,7 +347,7 @@ Coeffmat%>%
   geom_line()+facet_wrap(vars(key),scales='free_y')
 ```
 
-![](bankruptcy-data-analysis_files/figure-gfm/unnamed-chunk-13-1.png)<!-- -->
+![image](https://user-images.githubusercontent.com/127844778/236184367-7d9ec53a-60b4-407a-97ef-37fb60881daf.png)
 
 ``` r
 pred_lassoreg = predict(lassoreg,s = bestlam,
@@ -380,7 +380,7 @@ prunedTree = prune(Tree, cp = Tree$cptable[which.min(Tree$cptable[,"xerror"]),"C
 rpart.plot(Tree)
 ```
 
-![](bankruptcy-data-analysis_files/figure-gfm/unnamed-chunk-16-1.png)<!-- -->
+![image](https://user-images.githubusercontent.com/127844778/236184402-c178d0cb-c371-4527-a6e7-ee9027deb6a7.png)
 
 ``` r
 printcp(Tree)
