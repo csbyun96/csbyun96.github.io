@@ -1,3 +1,13 @@
+---
+layout: post
+title: Forecasting Turnover of Markets in New South Wales with R
+subtitle: R Data Analysis
+cover-img: /assets/img/path.jpg
+thumbnail-img: /assets/img/thumb.png
+share-img: /assets/img/path.jpg
+tags: [R]
+---
+
 Forecasting Turnover of Markets in New South Wales
 ================
 Changsoo Byun
