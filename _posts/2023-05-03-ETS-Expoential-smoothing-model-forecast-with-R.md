@@ -1,9 +1,20 @@
+---
+layout: post
+title: Exponential Smoothing ETS Models Forecasting with R
+subtitle: R Data Analysis
+gh-repo: daattali/beautiful-jekyll
+gh-badge: [star, fork, follow]
+tags: [R]
+comments: true
+---
+
 Expoential smoothing ETS model Forecasting Turnover of Markets in New
 South Wales
 ================
 Changsoo Byun
 
-![](2023-05-03-ETS-Expoential-smoothing-model-forecast-with-R_files/figure-gfm/unnamed-chunk-1-1.png)<!-- -->
+![image](https://user-images.githubusercontent.com/127844778/236170287-558752bd-85ab-4c8c-80fe-7f928cb8e4c3.png)
+
 \#Based on the time series plot of turnover in New South Wales
 supermarkets and grocery stores, a clear linear trend can be observed.
 The trend appears to be steadily increasing over time, indicating that
@@ -32,7 +43,8 @@ project the behavior of the seasonal pattern. (M, A, M)
     ##      AIC     AICc      BIC 
     ## 5577.774 5579.221 5647.287
 
-![](2023-05-03-ETS-Expoential-smoothing-model-forecast-with-R_files/figure-gfm/unnamed-chunk-2-1.png)<!-- -->
+![image](https://user-images.githubusercontent.com/127844778/236170357-8fb57910-1ed8-4f4e-b9a2-5507c7cb6d36.png)
+
 \#The parameter estimates are alpha=0.2395, beta=0.0061 and
 gamma=0.1417. The output also returns the estimates for the intial
 states l\[0\], b\[0\],s\[0\],s\[-1\], s\[-2\], s\[-3\], s\[-4\],
@@ -42,7 +54,7 @@ equations to be interpreted as weighted averages. The lower the AIC,
 AICc, and BIC values (5577.774, 5579.221, and 5647.287, respectively),
 the better the model fits the data.
 
-![](2023-05-03-ETS-Expoential-smoothing-model-forecast-with-R_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
+![image](https://user-images.githubusercontent.com/127844778/236170398-73a4e0ca-6b1a-4fdd-9da0-278fd7a792b7.png)
 
     ## # A tibble: 1 × 3
     ##   .model lb_stat lb_pvalue
@@ -91,7 +103,6 @@ model. To illustrate this, several models, such as ETS(A,A,M),
 ETS(M,M,M), ETS(A,A,A), and ETS(M,A,A), could be compared to determine
 which one is the best fit for the data.
 
-## Question 5
 
 ``` r
 fit2 <- train |>
@@ -122,7 +133,6 @@ second lowest AIC and AICc scores, which are the preferred criteria for
 selecting the best ETS model. Therefore, ETS(A,Ad,M) could be a
 plausible alternative ETS model to consider.
 
-## Question 6
 
 ``` r
 fc <- fit |> 
@@ -136,7 +146,7 @@ fc |>
        title= "Forecasts for montly turnover of supermarket and grocery stores")
 ```
 
-![](2023-05-03-ETS-Expoential-smoothing-model-forecast-with-R_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
+![image](https://user-images.githubusercontent.com/127844778/236170590-d7c72e78-4219-4527-9aa3-bd2a23454f29.png)
 
 ``` r
 fit3 <- train |>
@@ -155,7 +165,7 @@ fc2 |>
        title= "Forecasts for montly turnover of supermarket and grocery stores")
 ```
 
-![](2023-05-03-ETS-Expoential-smoothing-model-forecast-with-R_files/figure-gfm/unnamed-chunk-6-2.png)<!-- -->
+![image](https://user-images.githubusercontent.com/127844778/236170628-46480736-3e90-41f4-b8ce-6b0485bf1c72.png)
 
 \#Both plots display the point forecasts and 80% and 95% prediction
 intervals for the turnover of supermarket and grocery stores in New
@@ -166,7 +176,6 @@ which represents the ETS(M,A,M) model, closely aligns with the original
 sample plot, suggesting that this model may provide more accurate
 forecasts than the ETS(A,Ad,M) model.
 
-## Question 7
 
 ``` r
 my_series |> 
