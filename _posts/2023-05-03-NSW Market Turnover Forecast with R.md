@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Sample blog post
-subtitle: Each post also has a subtitle
+title: Forecasting Turnover of Markets in New South Wales with R
+subtitle: R Data Analysis
 gh-repo: daattali/beautiful-jekyll
 gh-badge: [star, fork, follow]
-tags: [test]
+tags: [R]
 comments: true
 ---
 
