@@ -2,8 +2,7 @@
 layout: post
 title: Forecasting Turnover of Markets in New South Wales with R
 subtitle: R Data Analysis
-cover-img: /assets/img/path.jpg
-thumbnail-img: /assets/img/thumb.png
+thumbnail-img: [/assets/img/thumb.png](https://avatars.githubusercontent.com/u/127844778?v=4)
 share-img: /assets/img/path.jpg
 tags: [R]
 ---
@@ -24,7 +23,7 @@ timeplot <- my_series |>
 print(timeplot)
 ```
 
-![](NSW-market-forecast_files/figure-gfm/unnamed-chunk-2-1.png)<!-- -->
+![image](https://user-images.githubusercontent.com/127844778/236167285-06704cd0-6299-4401-98bc-5a8b04dacf62.png)
 
 \#The time plot depicts an increasing trend in the turnover data of
 supermarket and grocery stores in New South Wales. Moreover, there is a
@@ -45,7 +44,7 @@ seasonal <- my_series |>
 seasonal
 ```
 
-![](NSW-market-forecast_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
+![image](https://user-images.githubusercontent.com/127844778/236167383-75bfaeb6-69a5-4bb8-a65e-90406d99d7dd.png)
 
 \#The turnover of supermarket and grocery stores in New South Wales
 shows a sharp increase in March and December, while February shows a
@@ -66,10 +65,7 @@ ssp <- my_series |>
 ssp
 ```
 
-![](NSW-market-forecast_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
-\#The plot displays some seasonal patterns, with a notable rise in
-turnover during December and a decline in February, while other months
-remain consistent with few fluctuations.
+![image](https://user-images.githubusercontent.com/127844778/236167487-7091c746-4b4a-4421-8ef1-4fcdbdb29dbb.png)
 
 ``` r
 #Additive decomposition
@@ -89,7 +85,7 @@ AD
 
     ## Warning: Removed 6 rows containing missing values (`geom_line()`).
 
-![](NSW-market-forecast_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
+![image](https://user-images.githubusercontent.com/127844778/236167603-f07a6f92-e0cd-433f-b802-5c8b00b93270.png)
 
 ``` r
 #X-11 method
@@ -103,7 +99,7 @@ autoplot(x11_dcmp) +
     subtitle="New South Wales")
 ```
 
-![](NSW-market-forecast_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
+![image](https://user-images.githubusercontent.com/127844778/236167660-c4e35066-d548-41e4-bb58-a1d114ed73c9.png)
 
 ``` r
 x11_dcmp
@@ -140,7 +136,7 @@ STL <- my_series |>
 STL
 ```
 
-![](NSW-market-forecast_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
+![image](https://user-images.githubusercontent.com/127844778/236167733-11e22cb3-448a-4387-93bf-c385a000f34b.png)
 
 \#Transformations may not be necessary when analyzing time series data,
 and simple transformations are often sufficient. The use of
@@ -218,7 +214,7 @@ q3p <- ggplot() +
 q3p
 ```
 
-![](NSW-market-forecast_files/figure-gfm/unnamed-chunk-8-1.png)<!-- -->
+![image](https://user-images.githubusercontent.com/127844778/236167831-5705110a-feb2-4fb0-8f90-8b003c0a8a4c.png)
 
 ``` r
 fit <- train |> 
@@ -239,7 +235,7 @@ fc |>
   guides(colour = guide_legend(title = "Forecast"))
 ```
 
-![](NSW-market-forecast_files/figure-gfm/unnamed-chunk-9-1.png)<!-- -->
+![image](https://user-images.githubusercontent.com/127844778/236167909-c250b372-4463-4bf7-a0b7-7ce849575bd0.png)
 
 ``` r
 accuracy(fc, my_series)
@@ -272,7 +268,7 @@ fit |>
 
     ## Warning: Removed 12 rows containing non-finite values (`stat_bin()`).
 
-![](NSW-market-forecast_files/figure-gfm/unnamed-chunk-10-1.png)<!-- -->
+![image](https://user-images.githubusercontent.com/127844778/236168026-a59ec4d5-68ce-4d92-89b8-f670995c3cb2.png)
 
 ``` r
 augment(fit) |> 
@@ -304,7 +300,8 @@ my_series |>
   autoplot(my_series)
 ```
 
-![](NSW-market-forecast_files/figure-gfm/unnamed-chunk-11-1.png)<!-- -->
+![image](https://user-images.githubusercontent.com/127844778/236168095-042ed88b-4df6-4036-a8dd-4d370585606a.png)
+
 \#The plot shows the 80% and 95% prediction intervals and the point
 forecasts for the turnover of supermarket and grocery stores in New
 South Wales based on seasonal naive method.The point forecasts look
