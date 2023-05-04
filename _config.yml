@@ -21,10 +21,7 @@ author: Changsoo Byun
 
 navbar-links:
   About Me: "About Me"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+  Category: "https://csbyun96.github.io/tags/"
 
 ################
 # --- Logo --- #
