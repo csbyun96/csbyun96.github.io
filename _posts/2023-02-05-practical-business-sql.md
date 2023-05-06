@@ -8,15 +8,17 @@ tags: [SQL]
 comments: true
 ---
 
-#Daily Registrations
+Daily Registrations
 
 ```sql
 SELECT date(registtime),count(id)
 FROM da_account WHERE date(registtime)>'2019-10-31'
 GROUP BY date(registtime);
+```
 
-#Daily Registrions and the transaction made on the same day
+Daily Registrions and the transaction made on the same day
 
+```sql
 SELECT date(tt),count(DISTINCT(aa))
 FROM 
 		(SELECT a.accountid as aa,a.createtime as tt
@@ -29,7 +31,7 @@ HAVING a.createtime>'2019-10-31') mm
 GROUP BY 1;
 ```
 
-#Transaction Count 
+Transaction Count 
 
 ```sql
 FROM
@@ -47,7 +49,7 @@ GROUP BY accountid) aaa
 GROUP BY 1;
 ```
 
-#Transanction made on the day user registered
+Transanction made on the day user registered
 
 ```sql
 SELECT date(tt),count(DISTINCT(aa))
@@ -61,7 +63,7 @@ ON a.accountid=b.id AND date(a.createtime)=date(b.registtime)
 HAVING a.createtime>'2018-12-25') mm
 GROUP BY 1;
 ```
-#Identifying the day users made their first transaction
+Identifying the day users made their first transaction
 
 ```sql
 SELECT
@@ -121,7 +123,7 @@ JOIN (
 ) b ON a.itemid = b.id;
 ```
 
-#Average time spent on surfing
+Average time spent on surfing
 
 ```sql
 SELECT count(accountid),sum(diff),sum(diff)/count(accountid)
