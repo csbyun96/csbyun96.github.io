@@ -1,3 +1,14 @@
+---
+layout: post
+title: Customer Segmentation using K-means Clustering with Python
+subtitle: Python Data Analysis
+gh-repo: daattali/beautiful-jekyll
+gh-badge: [star, fork, follow]
+tags: [Python]
+comments: true
+---
+
+
 Importing the Dependencies
 
 
