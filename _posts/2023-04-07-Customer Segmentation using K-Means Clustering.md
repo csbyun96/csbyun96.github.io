@@ -670,9 +670,11 @@ plt.show()
 ```
 
 
+
+
+![output_14_0](https://user-images.githubusercontent.com/127844778/236993930-9bcefca9-86e7-4618-b856-679c5b577984.png)
     
-![png](output_14_0.png)
-    
+
 
 
 Optimum Number of Clusters = 5
@@ -729,7 +731,8 @@ plt.show()
 
 
     
-![png](output_20_0.png)
+![output_20_0](https://user-images.githubusercontent.com/127844778/236993977-db6d91bd-18f4-4a9d-a36f-5b4563bbdf08.png)
+
     
 
 
