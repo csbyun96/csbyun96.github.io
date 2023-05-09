@@ -380,8 +380,9 @@ sns.heatmap(ecom_customers.corr(), linewidth=0.8, annot=True)
 
 
 
-    
-![png](output_6_1.png)
+ ![output_6_1](https://github.com/csbyun96/csbyun96.github.io/assets/127844778/94fe975f-fc1f-438d-b84e-413b1105393c)
+   
+
     
 
 
@@ -399,7 +400,8 @@ sns.jointplot(data = ecom_customers, x = "Yearly Amount Spent", y = "Time on App
 
 
     
-![png](output_7_1.png)
+![output_7_1](https://github.com/csbyun96/csbyun96.github.io/assets/127844778/b05822d0-6fb4-4136-8836-73142fdbace5)
+
     
 
 
@@ -417,7 +419,8 @@ sns.lmplot(x='Length of Membership',y='Yearly Amount Spent',data = ecom_customer
 
 
     
-![png](output_8_1.png)
+![output_8_1](https://github.com/csbyun96/csbyun96.github.io/assets/127844778/91818b2e-5b04-45b4-b430-382243617a6d)
+
     
 
 
@@ -434,8 +437,9 @@ sns.jointplot(data = ecom_customers, x = "Length of Membership", y = "Time on We
 
 
 
-    
-![png](output_9_1.png)
+
+ ![output_9_1](https://github.com/csbyun96/csbyun96.github.io/assets/127844778/a0a23691-9ee4-4a35-bb51-e2e51c4f5da0) 
+
     
 
 
@@ -453,7 +457,8 @@ sns.pairplot(ecom_customers)
 
 
     
-![png](output_10_1.png)
+![output_10_1](https://github.com/csbyun96/csbyun96.github.io/assets/127844778/04ee7c5d-4c80-48da-8623-10b0b5e605a1)
+
     
 
 
@@ -473,7 +478,8 @@ plt.scatter(y_test,predictions)
 
 
     
-![png](output_11_1.png)
+![output_11_1](https://github.com/csbyun96/csbyun96.github.io/assets/127844778/5d15536a-9577-4fe9-98e8-97b067a91461)
+
     
 
 
@@ -499,8 +505,9 @@ sns.distplot((y_test-predictions),bins=50);
 
 
     
-![png](output_13_0.png)
-    
+![output_13_0](https://github.com/csbyun96/csbyun96.github.io/assets/127844778/b7eba359-7891-4ce8-ba7d-ae92c804359f)
+
+
 
 
 
