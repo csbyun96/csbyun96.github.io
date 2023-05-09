@@ -1,3 +1,14 @@
+---
+layout: post
+title: Clothing E-Commerce Data Analysis using Linear Regression with Python
+subtitle: Python Data Analysis
+gh-repo: daattali/beautiful-jekyll
+gh-badge: [star, fork, follow]
+tags: [Python]
+comments: true
+---
+
+
 ```python
 #Using linear regression to analyze customer behaviour 
 import pandas as pd
