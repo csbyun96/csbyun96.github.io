@@ -1,3 +1,14 @@
+---
+layout: post
+title: ARIMA Model Business Forecasting with R
+subtitle: R Data Analysis
+gh-repo: daattali/beautiful-jekyll
+gh-badge: [star, fork, follow]
+tags: [R]
+comments: true
+---
+
+
 Forecasting Business Turnover with ARIMA model
 ================
 Changsoo Byun
@@ -64,11 +75,10 @@ data |> gg_tsdisplay(
 )
 ```
 
-    ## Warning: Removed 13 rows containing missing values (`geom_line()`).
 
-    ## Warning: Removed 13 rows containing missing values (`geom_point()`).
 
-![](ARIMA-Business-Forecast_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
+![unnamed-chunk-3-1](https://github.com/csbyun96/csbyun96.github.io/assets/127844778/875c7ace-4003-40ec-b75c-e32a28e18688)
+
 
 ``` r
 fit <- data |> 
@@ -99,7 +109,8 @@ first order difference. Thus, (0,1,5)(0,1,2) is used
 fit |> gg_tsresiduals()
 ```
 
-![](ARIMA-Business-Forecast_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
+![unnamed-chunk-4-1](https://github.com/csbyun96/csbyun96.github.io/assets/127844778/7c9942c1-524a-4db0-b204-f770d64c869b)
+
 
 ``` r
 augment(fit) |> 
@@ -165,7 +176,8 @@ report(fit3)
 fit3 |> gg_tsresiduals()
 ```
 
-![](ARIMA-Business-Forecast_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
+![unnamed-chunk-6-1](https://github.com/csbyun96/csbyun96.github.io/assets/127844778/b395429a-89a9-473e-8295-f576deeeca37)
+
 
 ``` r
 augment(fit3) |> 
@@ -230,7 +242,9 @@ fit3 |>
   guides(colour = guide_legend(title = "Forecast"))
 ```
 
-![](ARIMA-Business-Forecast_files/figure-gfm/unnamed-chunk-8-1.png)<!-- -->
+![unnamed-chunk-8-1](https://github.com/csbyun96/csbyun96.github.io/assets/127844778/d1e73ee9-8bdd-44f3-a6db-55d84f10821f)
+
+
 The plot shows the 80% and 95% prediction intervals and the point
 forecasts for the turnover of supermarket and grocery stores in New
 South Wales based on ARIMA method.The point forecasts look reasonable,
@@ -252,7 +266,10 @@ nsp <- newdata %>% gg_season(y) +
 nsp
 ```
 
-![](ARIMA-Business-Forecast_files/figure-gfm/unnamed-chunk-10-1.png)<!-- -->
+![unnamed-chunk-10-1](https://github.com/csbyun96/csbyun96.github.io/assets/127844778/9d4440d7-2d3d-46b4-bd58-3c7945a60c36)
+
+
+
 The turnover rate in the supermarket follows a consistent trend and
 seasonality in the time plot. However, there was a significant increase
 in March 2021, likely due to people buying a large quantity of products
@@ -278,7 +295,10 @@ fc |> autoplot(data)+
   guides(colour = guide_legend(title = "Forecast"))
 ```
 
-![](ARIMA-Business-Forecast_files/figure-gfm/unnamed-chunk-11-1.png)<!-- -->
+
+![unnamed-chunk-11-1](https://github.com/csbyun96/csbyun96.github.io/assets/127844778/086ea072-ae4c-4b7e-b8f8-9359827bc2a5)
+
+
 The point forecasts look to be quite similar, but SNAIVE produces lower
 values and wider forecast interval than other two models.
 
@@ -314,7 +334,8 @@ fc2 |> autoplot(newdata)+
   guides(colour = guide_legend(title = "Forecast"))
 ```
 
-![](ARIMA-Business-Forecast_files/figure-gfm/unnamed-chunk-13-1.png)<!-- -->
+![unnamed-chunk-13-1](https://github.com/csbyun96/csbyun96.github.io/assets/127844778/fb612656-47f5-4ecd-a1c9-1e444e20ba6b)
+
 
 Based on the generated plot, both the ARIMA and ETS models exhibit
 reasonable forecast points by capturing the trend and seasonality of the
